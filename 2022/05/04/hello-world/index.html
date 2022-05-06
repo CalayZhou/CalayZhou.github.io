@@ -5,18 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="What is the IOD task, IOD">
-    <meta name="description" content="Insubstantial Object Detection
-
-
-
-Overall Pipeline
-
-
-
-
-Experiment Results
-
-">
+    <meta name="description" content="1.Insubstantial Object DetectionRecently, the emergence of deep learning based approaches has witnessed significant adva">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -365,18 +354,32 @@ Experiment Results
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Insubstantial-Object-Detection"><a href="#Insubstantial-Object-Detection" class="headerlink" title="Insubstantial Object Detection"></a>Insubstantial Object Detection</h2><div align="center">
+                <h2 id="1-Insubstantial-Object-Detection"><a href="#1-Insubstantial-Object-Detection" class="headerlink" title="1.Insubstantial Object Detection"></a>1.Insubstantial Object Detection</h2><p>Recently, the emergence of deep learning based approaches has witnessed significant advancements of object detection. Nevertheless, they still face intractable problems on some insubstantial objects captured by multispectral cameras under specific wavelength, e.g. smoke, steam and gas leak. Due to frequent occurrences of smoke poisoning, fire accident, toxic gas leakage and explosion, it is urgent and crucial to realize real-time intelligent monitoring as well as early warning for insubstantial objects. This research topic is fresh and challenging, as insubstantial objects are quite different from conventional objects from several aspects:</p>
+<blockquote>
+<p>(1) indistinct boundary and amorphous shape;<br>(2) the similarity to the background surroundings;<br>(3) absence of color information and saliency.</p>
+</blockquote>
+<div align="center">
 <img src="/medias/images/introduction.png" height="510" width="700">
 </div>
 
-<h2 id="Overall-Pipeline"><a href="#Overall-Pipeline" class="headerlink" title="Overall Pipeline"></a>Overall Pipeline</h2><div align="center">
+<p>In consideration of the image cues (MS, CC, SS, ED) in classical paper <em>what is an object</em>, the insubstantial object is more similar to the background rather than the foreground.</p>
+<h2 id="2-Overall-Pipeline"><a href="#2-Overall-Pipeline" class="headerlink" title="2.Overall Pipeline"></a>2.Overall Pipeline</h2><p>Consequently, the collaborative representation of spatial and temporal features is crucial under the limitation of spatial information within a static frame. In this paper, we explore a spatio-temporal aggregation framework from two aspects: First, representative spatio-temporal backbones of action recognition are introduce into our framework to evaluate their accuracy on IOD task. Second, spatio-temporal aggregation loss (STAloss) is designed to impose constraints in the three-dimensional space.</p>
+<div align="center">
 <img src="/medias/images/framework.png" height="510" width="700">
 </div>
 
 
-<h2 id="Experiment-Results"><a href="#Experiment-Results" class="headerlink" title="Experiment Results"></a>Experiment Results</h2><div align="center">
-<img src="/medias/images/framework.png" height="510" width="700">
+<h2 id="3-Experiment-Results"><a href="#3-Experiment-Results" class="headerlink" title="3.Experiment Results"></a>3.Experiment Results</h2><div align="center">
+<img src="/medias/images/result1.png" height="510" width="700">
 </div>
+Our spatio-temporal aggregation framework simply replaces the backbone of CenterNet with TEA, and it achieves overall better performances which suggest the spatio-temporal aggregation is crucial.
+
+<div align="center">
+<img src="/medias/images/result2.png" height="510" width="700">
+</div>
+
+<p>Experimental results reveal that temporal shift models have the best video-level detection performance which preserve the feature-level integrity of spatial dimension, and STAloss can further improve the performance.</p>
+
                 
             </div>
             <hr/>
@@ -436,13 +439,13 @@ Experiment Results
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/05/04/hello/">
+                <a href="/2022/05/04/Dataset/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="IOD-Video Dataset Overview">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="IOD-Video Dataset Download">
                         
-                        <span class="card-title">IOD-Video Dataset Overview</span>
+                        <span class="card-title">IOD-Video Dataset Download</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -470,16 +473,16 @@ Experiment Results
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/04/hello-world/">
+                <a href="/2022/05/04/hello/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="What is the IOD task">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="IOD-Video Dataset Overview">
                         
-                        <span class="card-title">What is the IOD task</span>
+                        <span class="card-title">IOD-Video Dataset Overview</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -500,7 +503,6 @@ Experiment Results
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
